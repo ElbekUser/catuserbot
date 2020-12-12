@@ -62,16 +62,16 @@ async def carbon_api(e):
     driver.find_element_by_xpath("//button[contains(text(),'Export')]").click()
     # driver.find_element_by_xpath("//button[contains(text(),'4x')]").click()
     # driver.find_element_by_xpath("//button[contains(text(),'PNG')]").click()
-    await cat.edit("`Processing..\n75%`")
+    await cat.edit("`Tayyorlanmoqda..\n75%`")
     # Waiting for downloading
     await asyncio.sleep(2)
     await cat.edit("`Done Dana Done...\n100%`")
     file = "./carbon.png"
-    await cat.edit("`Uploading..`")
+    await cat.edit("`Yuklanmoqda..`")
     await e.client.send_file(
         e.chat_id,
         file,
-        caption="Here's your carbon, \n Carbonised by cat",
+        caption="Mana sizga /n Sovga",
         force_document=True,
         reply_to=e.message.reply_to_msg_id,
     )
